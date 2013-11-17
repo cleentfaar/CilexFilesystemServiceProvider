@@ -1,15 +1,15 @@
 <?php
 
-namespace Neutron\Silex\Provider\Tests;
+namespace Cleentfaar\Cilex\Provider\Tests;
 
-use Neutron\Silex\Provider\FilesystemServiceProvider;
-use Silex\Application;
+use Cleentfaar\Cilex\Provider\FilesystemServiceProvider;
+use Cilex\Application;
 
 class FilesystemServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
     public function testRegister()
     {
-        $app = new Application();
+        $app = new Application('Test');
         $app->register(new FilesystemServiceProvider());
 
         $this->assertInstanceOf('Symfony\\Component\\Filesystem\\Filesystem', $app['filesystem']);

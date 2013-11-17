@@ -1,0 +1,10 @@
+# Composer ignores
+/vendor/
+/composer.phar
+/composer.lock
+
+# IDE project ignores
+/.idea
+/.buildpath
+/.settings
+/.project
