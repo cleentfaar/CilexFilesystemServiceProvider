@@ -1,6 +1,6 @@
 # Cilex Filesystem Service Provider
 
-[![Build Status](https://secure.travis-ci.org/cleentfaar/CilexFilesystemServiceProvider.png?branch=master)](http://travis-ci.org/cleentfaar/Cilex-Filesystem-Service-Provider)
+[![Build Status](https://secure.travis-ci.org/cleentfaar/CilexFilesystemServiceProvider.png?branch=master)](http://travis-ci.org/cleentfaar/CilexFilesystemServiceProvider)
 
 This is a [Cilex Service Provider](http://cilex.github.com)
 for Symfony [Filesystem Component](http://symfony.com/doc/master/components/filesystem.html).
