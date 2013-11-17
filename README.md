@@ -1,40 +1,41 @@
-#Cilex Filesystem Service Provider
+# Cilex Filesystem Service Provider
 
-[![Build Status](https://secure.travis-ci.org/cleentfaar/CilexFilesystemServiceProvider.png?branch=master)](http://travis-ci.org/romainneutron/Silex-Filesystem-Service-Provider)
+[![Build Status](https://secure.travis-ci.org/cleentfaar/CilexFilesystemServiceProvider.png?branch=master)](http://travis-ci.org/cleentfaar/Cilex-Filesystem-Service-Provider)
 
-This is a [Silex Service Provider](http://silex.sensiolabs.org/doc/providers.html)
+This is a [Cilex Service Provider](http://cilex.github.com)
 for Symfony [Filesystem Component](http://symfony.com/doc/master/components/filesystem.html).
 
-##Installation
+## Installation
 
 Add it using [composer](http://getcomposer.org/) :
 
 ```json
 {
     "require": {
-        "neutron/silex-filesystem-provider": "dev-master"
+        "cleentfaar/cilex-filesystem-provider": "dev-master"
     }
 }
 ```
 
-##Usage
+## Usage
 
 ```php
 use Silex\Application;
-use Neutron\Silex\Provider\FilesystemServiceProvider;
+use Cleentfaar\Cilex\Provider\FilesystemServiceProvider;
 
 $app = new Application();
 // Register the filesystem
 $app->register(new FilesystemServiceProvider());
 
-// Just use it as any Silex service
+// Just use it as any Cilex service
 if (!$app['filesystem']->exists('any-absolute-or-relative-path...')) {
 	throw new \Namespace\PathNotFoundCustomException();
 }
 ```
 
-###Informations
-Read more informations about the [Symfony2 Filesystem Component](http://symfony.com/doc/current/components/filesystem.html)
+## Filesystem
+
+Read more about the [Symfony2 Filesystem Component](http://symfony.com/doc/current/components/filesystem.html)
 
 ##License
 
